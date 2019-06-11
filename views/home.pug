@@ -1,0 +1,10 @@
+extends ./base.pug
+
+block content
+  h3 Upload
+  form(method="POST", enctype="multipart/form-data")
+    .form-group
+      label(for="image") Image
+      input.form-control(type="file", name="image", id="image")
+
+    button.btn.btn-success(type="submit") Save
