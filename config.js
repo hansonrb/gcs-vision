@@ -18,7 +18,7 @@ nconf
   });
 
 // Check for required settings
-// checkConfig("CLOUD_BUCKET");
+checkConfig("CLOUD_BUCKET");
 
 function checkConfig(setting) {
   if (!nconf.get(setting)) {
