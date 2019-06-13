@@ -2,7 +2,8 @@ extends ./base.pug
 
 block content
   h3 Upload
-  form(method="POST", enctype="multipart/form-data" action="/upload/add")
+
+  form(method="POST", enctype="multipart/form-data", id="myform")
     .form-group
       label(for="image") Image
       input.form-control(type="file", name="image", id="image")
